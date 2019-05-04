@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.graduate.luggagedelivery.rest_server.dao.TTruckMapper">
+  <resultMap id="BaseResultMap" type="com.graduate.luggagedelivery.rest_server.entity.TTruck">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="licensePlate" jdbcType="VARCHAR" property="licenseplate" />
+    <result column="useStatus" jdbcType="VARCHAR" property="usestatus" />
+    <result column="vinner" jdbcType="VARCHAR" property="vinner" />
+    <result column="vlength" jdbcType="VARCHAR" property="vlength" />
+    <result column="vload" jdbcType="VARCHAR" property="vload" />
+    <result column="vtype" jdbcType="VARCHAR" property="vtype" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, licensePlate, useStatus, vinner, vlength, vload, vtype
+  </sql>
+  <select id="selectByExample" parameterType="com.graduate.luggagedelivery.rest_server.entity.TTruckExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from t_truck
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_truck
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from t_truck
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.graduate.luggagedelivery.rest_server.entity.TTruckExample">
+    delete from t_truck
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.graduate.luggagedelivery.rest_server.entity.TTruck">
+    insert into t_truck (id, licensePlate, useStatus, 
+      vinner, vlength, vload, 
+      vtype)
+    values (#{id,jdbcType=BIGINT}, #{licenseplate,jdbcType=VARCHAR}, #{usestatus,jdbcType=VARCHAR}, 
+      #{vinner,jdbcType=VARCHAR}, #{vlength,jdbcType=VARCHAR}, #{vload,jdbcType=VARCHAR}, 
+      #{vtype,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.graduate.luggagedelivery.rest_server.entity.TTruck">
+    insert into t_truck
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="licenseplate != null">
+        licensePlate,
+      </if>
+      <if test="usestatus != null">
+        useStatus,
+      </if>
+      <if test="vinner != null">
+        vinner,
+      </if>
+      <if test="vlength != null">
+        vlength,
+      </if>
+      <if test="vload != null">
+        vload,
+      </if>
+      <if test="vtype != null">
+        vtype,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="licenseplate != null">
+        #{licenseplate,jdbcType=VARCHAR},
+      </if>
+      <if test="usestatus != null">
+        #{usestatus,jdbcType=VARCHAR},
+      </if>
+      <if test="vinner != null">
+        #{vinner,jdbcType=VARCHAR},
+      </if>
+      <if test="vlength != null">
+        #{vlength,jdbcType=VARCHAR},
+      </if>
+      <if test="vload != null">
+        #{vload,jdbcType=VARCHAR},
+      </if>
+      <if test="vtype != null">
+        #{vtype,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.graduate.luggagedelivery.rest_server.entity.TTruckExample" resultType="java.lang.Long">
+    select count(*) from t_truck
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update t_truck
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.licenseplate != null">
+        licensePlate = #{record.licenseplate,jdbcType=VARCHAR},
+      </if>
+      <if test="record.usestatus != null">
+        useStatus = #{record.usestatus,jdbcType=VARCHAR},
+      </if>
+      <if test="record.vinner != null">
+        vinner = #{record.vinner,jdbcType=VARCHAR},
+      </if>
+      <if test="record.vlength != null">
+        vlength = #{record.vlength,jdbcType=VARCHAR},
+      </if>
+      <if test="record.vload != null">
+        vload = #{record.vload,jdbcType=VARCHAR},
+      </if>
+      <if test="record.vtype != null">
+        vtype = #{record.vtype,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update t_truck
+    set id = #{record.id,jdbcType=BIGINT},
+      licensePlate = #{record.licenseplate,jdbcType=VARCHAR},
+      useStatus = #{record.usestatus,jdbcType=VARCHAR},
+      vinner = #{record.vinner,jdbcType=VARCHAR},
+      vlength = #{record.vlength,jdbcType=VARCHAR},
+      vload = #{record.vload,jdbcType=VARCHAR},
+      vtype = #{record.vtype,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.graduate.luggagedelivery.rest_server.entity.TTruck">
+    update t_truck
+    <set>
+      <if test="licenseplate != null">
+        licensePlate = #{licenseplate,jdbcType=VARCHAR},
+      </if>
+      <if test="usestatus != null">
+        useStatus = #{usestatus,jdbcType=VARCHAR},
+      </if>
+      <if test="vinner != null">
+        vinner = #{vinner,jdbcType=VARCHAR},
+      </if>
+      <if test="vlength != null">
+        vlength = #{vlength,jdbcType=VARCHAR},
+      </if>
+      <if test="vload != null">
+        vload = #{vload,jdbcType=VARCHAR},
+      </if>
+      <if test="vtype != null">
+        vtype = #{vtype,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.graduate.luggagedelivery.rest_server.entity.TTruck">
+    update t_truck
+    set licensePlate = #{licenseplate,jdbcType=VARCHAR},
+      useStatus = #{usestatus,jdbcType=VARCHAR},
+      vinner = #{vinner,jdbcType=VARCHAR},
+      vlength = #{vlength,jdbcType=VARCHAR},
+      vload = #{vload,jdbcType=VARCHAR},
+      vtype = #{vtype,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
