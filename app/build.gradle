@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply from: '../versionConfig.gradle'
 
 android {
     compileSdkVersion 28
@@ -6,8 +7,8 @@ android {
         applicationId "me.xujichang.luggagedelivery"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 100
+        versionName "1.0.0"
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
@@ -15,6 +16,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
     }
 }
 repositories {
@@ -24,6 +29,8 @@ repositories {
 }
 
 dependencies {
+    def baseLib = "1.0.4-alpha04"
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
@@ -34,4 +41,27 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'android.arch.navigation:navigation-fragment:1.0.0'
     implementation 'android.arch.navigation:navigation-ui:1.0.0'
+
+    implementation "com.squareup.retrofit2:retrofit:$lib.retrofit2"
+    implementation "com.squareup.retrofit2:retrofit-converters:$lib.retrofit2"
+    implementation "com.squareup.retrofit2:retrofit-adapters:$lib.retrofit2"
+
+    // https://mvnrepository.com/artifact/com.squareup.retrofit2/adapter-rxjava2
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$lib.retrofit2"
+
+    // https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-gson
+    implementation "com.squareup.retrofit2:converter-gson:$lib.retrofit2"
+    implementation "com.squareup.okhttp3:okhttp:3.14.1"
+    // https://mvnrepository.com/artifact/com.squareup.okhttp3/logging-interceptor
+    implementation "com.squareup.okhttp3:logging-interceptor:3.14.1"
+
+    // https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava
+    implementation "io.reactivex.rxjava2:rxjava:$lib.rxjava2"
+
+    // https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxandroid
+    implementation "io.reactivex.rxjava2:rxandroid:$lib.rxandroid"
+    implementation "com.github.xujichang.XBase:base-net:$baseLib"
+    implementation "com.github.xujichang.XBase:base-core:$baseLib"
+    implementation "com.github.xujichang.XBase:base-utils:$baseLib"
+    implementation "com.github.xujichang:Utils:1.0.0"
 }

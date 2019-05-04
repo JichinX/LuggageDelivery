@@ -23,7 +23,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import me.xujichang.luggagedelivery.R;
+import me.xujichang.luggagedelivery.base.WrapperEntity;
 import me.xujichang.luggagedelivery.base.ui.BaseActivity;
+import me.xujichang.luggagedelivery.entity.User;
+import me.xujichang.luggagedelivery.ui.main.MainActivity;
 
 /**
  * 登录页面
@@ -60,22 +63,14 @@ public class LoginActivity extends BaseActivity {
             }
         });
         //登录结果
-        loginViewModel.getLoginResult().observe(this, new Observer<LoginResult>() {
+        loginViewModel.getLoginResult().observe(this, new Observer<WrapperEntity<User>>() {
             @Override
-            public void onChanged(@Nullable LoginResult loginResult) {
-                if (loginResult == null) {
-                    return;
+            public void onChanged(WrapperEntity<User> entity) {
+                if (entity.getCode() == 200) {
+                    toActivity(MainActivity.class);
+                } else {
+                    showToast(entity);
                 }
-                if (loginResult.getError() != null) {
-                    showLoginFailed(loginResult.getError());
-                }
-                if (loginResult.getSuccess() != null) {
-                    updateUiWithUser(loginResult.getSuccess());
-                }
-                setResult(Activity.RESULT_OK);
-
-                //Complete and destroy login activity once successful
-                finish();
             }
         });
         //对输入内容进行监听

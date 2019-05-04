@@ -1,21 +1,23 @@
-package com.graduate.luggagedelivery.rest_server.base;
+package me.xujichang.luggagedelivery.base;
 
+import java.util.ArrayList;
+
+/**
+ * Des:LuggageDelivery - me.xujichang.luggagedelivery.base
+ *
+ * @author xujichang
+ * @date 2019-05-04 - 17:48
+ * <p>
+ * modify:
+ */
 public class WrapperEntity<T> {
     private int code;
     private String msg;
     private T data;
 
-    public WrapperEntity(Status status, T data) {
-        this.data = data;
-        code = status.getCode();
-        msg = status.getMsg();
-    }
-
-    public WrapperEntity(T data) {
-        this.data = data;
-    }
-
-    public WrapperEntity() {
+    public WrapperEntity(int code, String message) {
+        this.code = code;
+        this.msg = message;
     }
 
     public int getCode() {
@@ -42,8 +44,7 @@ public class WrapperEntity<T> {
         this.data = data;
     }
 
-    public void setStatus(Status status) {
-        code = status.getCode();
-        msg = status.getMsg();
+    public String toErrorString() {
+        return String.format("%s:%s", String.valueOf(code), msg);
     }
 }

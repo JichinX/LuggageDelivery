@@ -1,6 +1,15 @@
 package me.xujichang.luggagedelivery.data;
 
+import java.security.NoSuchAlgorithmException;
+
+import io.reactivex.observers.ResourceObserver;
+import me.xujichang.luggagedelivery.base.WrapperEntity;
 import me.xujichang.luggagedelivery.data.model.LoggedInUser;
+import me.xujichang.luggagedelivery.entity.User;
+import me.xujichang.luggagedelivery.net.api.UserApi;
+import me.xujichang.util.tool.StringTool;
+import me.xujichang.xbase.net.retrofit.RetrofitCenter;
+import me.xujichang.xbase.net.rxjava.RxSchedulers;
 
 /**
  * Class that requests authentication and user information from the remote data source and
@@ -43,12 +52,18 @@ public class LoginRepository {
         // @see https://developer.android.com/training/articles/keystore
     }
 
-    public Result<LoggedInUser> login(String username, String password) {
-        // handle login
-        Result<LoggedInUser> result = dataSource.login(username, password);
-        if (result instanceof Result.Success) {
-            setLoggedInUser(((Result.Success<LoggedInUser>) result).getData());
+    public void login(String username, String password, ResourceObserver<WrapperEntity<User>> observer) {
+//        String realName = null;
+        String realPwd = null;
+        try {
+//            realName = StringTool.getMD5(username);
+            realPwd = StringTool.getMD5(password);
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
         }
-        return result;
+        RetrofitCenter.getApi(UserApi.class)
+                .login(username, realPwd)
+                .compose(RxSchedulers.<WrapperEntity<User>>observableTransformer_io_main())
+                .subscribe(observer);
     }
 }

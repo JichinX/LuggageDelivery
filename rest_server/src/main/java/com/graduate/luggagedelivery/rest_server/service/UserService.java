@@ -26,12 +26,19 @@ public class UserService implements IUserService {
      * @return
      */
     @Override
-    public WrapperEntity<Boolean> userLogin(String account, String password) {
-        boolean success;
+    public WrapperEntity<TUser> userLogin(String account, String password) {
         TUserExample example = new TUserExample();
         example.createCriteria().andUnameEqualTo(account).andUserpasswordEqualTo(password);
         List<TUser> users = userMapper.selectByExample(example);
-        success = null != users && users.size() != 0;
-        return new WrapperEntity<>((success ? Status.SUCCESS : Status.LOGIN_FAILED), success);
+        TUser user = null;
+        WrapperEntity<TUser> wrapperEntity = new WrapperEntity<>();
+        if (null != users && users.size() > 0) {
+            user = users.get(0);
+            wrapperEntity.setStatus(Status.SUCCESS);
+        } else {
+            wrapperEntity.setStatus(Status.LOGIN_FAILED);
+        }
+        wrapperEntity.setData(user);
+        return wrapperEntity;
     }
 }
