@@ -7,41 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bc8e0f8-9441-4bab-9140-e3c3ac56023a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../apkPack.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/base/ErrorWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/base/WrapperEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/base/WrapperList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/net/api/UserApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jitpack.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../versionConfig.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/base/Connst.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/base/Const.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/base/ui/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/base/ui/BaseActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/data/LoginRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/data/LoginRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/login/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/login/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/login/LoginViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/login/LoginViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/base/WrapperEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/base/WrapperEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/controller/Hello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/Dept.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/Feedback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/FlowLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/Line.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/LineStation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/SessionBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/Transport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/TransportOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/Truck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/UserOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/main/SimpleUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/main/SysUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/rest_server/entity/main/User.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -205,7 +170,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
@@ -218,9 +183,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,11 +350,12 @@
       <workItem from="1556941287051" duration="95000" />
       <workItem from="1556942388334" duration="2221000" />
       <workItem from="1556974275470" duration="595000" />
+      <workItem from="1556985272249" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29095000" />
+    <option name="totallyTimeSpent" value="29098000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,10 +367,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="1" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22710623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22954823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
