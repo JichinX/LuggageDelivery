@@ -1,5 +1,8 @@
 package me.xujichang.luggagedelivery.entity;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 /**
  * Des:LuggageDelivery - me.xujichang.luggagedelivery.entity
  *
@@ -8,7 +11,9 @@ package me.xujichang.luggagedelivery.entity;
  * <p>
  * modify:
  */
+@Entity
 public class User {
+    @PrimaryKey
     private Long userid;
 
     private String uname;
@@ -97,5 +102,20 @@ public class User {
 
     public void setUserphone(String userphone) {
         this.userphone = userphone;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userid=" + userid +
+                ", uname='" + uname + '\'' +
+                ", useraddress='" + useraddress + '\'' +
+                ", userbirth='" + userbirth + '\'' +
+                ", useremail='" + useremail + '\'' +
+                ", usergender=" + usergender +
+                ", username='" + username + '\'' +
+                ", userpassword='" + userpassword + '\'' +
+                ", userphone='" + userphone + '\'' +
+                '}';
     }
 }

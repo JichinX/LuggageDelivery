@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_content"
+        tools:text="2018/02/12 12:12:12" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="added阿大的萨达的打的打打多少打多少萨达的事\n阿大的萨dded阿大的萨达的打的打打多少打多少萨达的事达达达达萨达\n萨达达萨达萨达萨达dded阿大的萨达的打的打打多少打多少萨达的事dded阿大的萨达的打的打打多少打多少萨达的事dded阿大的萨达的打的打打多少打多少萨达的事" />
+</androidx.constraintlayout.widget.ConstraintLayout>

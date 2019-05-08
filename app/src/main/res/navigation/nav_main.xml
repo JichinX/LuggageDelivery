@@ -3,21 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_main"
-    app:startDestination="@id/commentFragment">
+    app:startDestination="@id/navigation_order_sent">
 
     <fragment
-        android:id="@+id/commentFragment"
+        android:id="@+id/navigation_comment"
         android:name="me.xujichang.luggagedelivery.ui.main.fragments.CommentFragment"
-        android:label="comment_fragment"
+        android:label="fragment_comment"
         tools:layout="@layout/fragment_comment" />
     <fragment
-        android:id="@+id/orderFragment"
+        android:id="@+id/navigation_order_sent"
         android:name="me.xujichang.luggagedelivery.ui.main.fragments.OrderFragment"
         android:label="fragment_order"
-        tools:layout="@layout/fragment_order" />
+        tools:layout="@layout/fragment_order">
+        <argument
+            android:name="orderType"
+            android:defaultValue="1"
+            app:argType="integer" />
+    </fragment>
     <fragment
-        android:id="@+id/logisticsFragment"
-        android:name="me.xujichang.luggagedelivery.ui.main.fragments.LogisticsFragment"
-        android:label="logistics_fragment"
-        tools:layout="@layout/fragment_logistics" />
+        android:id="@+id/navigation_order_recv"
+        android:name="me.xujichang.luggagedelivery.ui.main.fragments.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order">
+        <argument
+            android:name="orderType"
+            android:defaultValue="2"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_personal"
+        android:name="me.xujichang.luggagedelivery.ui.main.fragments.PersonalFragment"
+        android:label="fragment_personal"
+        tools:layout="@layout/fragment_personal" />
 </navigation>

@@ -17,7 +17,7 @@ import me.xujichang.luggagedelivery.data.Result;
  * modify:
  */
 public class BaseViewModel extends AndroidViewModel {
-    private MutableLiveData<Result> mResultLiveData;
+    protected MutableLiveData<Result> mResultLiveData;
 
     public BaseViewModel(@NonNull Application application) {
         super(application);

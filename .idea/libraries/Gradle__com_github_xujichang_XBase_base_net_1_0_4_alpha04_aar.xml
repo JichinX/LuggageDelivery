@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.xujichang.XBase:base-net:1.0.4-alpha04@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f2f71e7c96821a53119ae4c9a47ea1c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f2f71e7c96821a53119ae4c9a47ea1c/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xujichang.XBase/base-net/1.0.4-alpha04/2ab024bd25986a4c54faed464c3b05de13e35065/base-net-1.0.4-alpha04-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xujichang.XBase/base-net/1.0.4-alpha04/ec5ea34c7320e0bebd2b6adf3253cc0c1911053a/base-net-1.0.4-alpha04-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

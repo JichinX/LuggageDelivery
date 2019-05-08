@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LuggageDelivery</string>
+    <string name="app_name">物品寄送</string>
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_account">Account</string>
     <string name="prompt_password">Password</string>
@@ -16,4 +16,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="list_gender">
+        <item>女</item>
+        <item>男</item>
+        <item>其他</item>
+    </string-array>
 </resources>

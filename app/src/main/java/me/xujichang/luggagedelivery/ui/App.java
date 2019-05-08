@@ -1,8 +1,9 @@
 package me.xujichang.luggagedelivery.ui;
 
-import android.app.Application;
+import androidx.multidex.MultiDexApplication;
 
 import me.xujichang.luggagedelivery.base.Const;
+import me.xujichang.luggagedelivery.entity.User;
 import me.xujichang.xbase.net.BaseNet;
 import me.xujichang.xbase.net.retrofit.RetrofitCenter;
 
@@ -14,7 +15,9 @@ import me.xujichang.xbase.net.retrofit.RetrofitCenter;
  * <p>
  * modify:
  */
-public class App extends Application {
+public class App extends MultiDexApplication {
+    public static User sUser;
+
     @Override
     public void onCreate() {
         super.onCreate();

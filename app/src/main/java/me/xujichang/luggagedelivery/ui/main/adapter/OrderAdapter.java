@@ -3,7 +3,6 @@ package me.xujichang.luggagedelivery.ui.main.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -24,9 +23,9 @@ import me.xujichang.luggagedelivery.util.IItemCommonListener;
  * <p>
  * modify:
  */
-public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.Holder> implements IAdapterHelper {
+public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.Holder> {
     private List<Order> mOrders;
-    private IItemCommonListener mCommonListener;
+    private IOrderAdapterListener<Order> mCommonListener;
     private boolean mHasMore = false;
 
     public OrderAdapter(List<Order> orders) {
@@ -49,45 +48,58 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.Holder> impl
         return mOrders.size();
     }
 
-    @Override
-    public void setOnItemClickListener(IItemCommonListener commonAdapter) {
+    public void setOnItemClickListener(IOrderAdapterListener<Order> commonAdapter) {
         mCommonListener = commonAdapter;
-    }
-
-    @Override
-    public void setHasMore(boolean hasMore) {
-        mHasMore = hasMore;
     }
 
     class Holder extends RecyclerView.ViewHolder {
 
-        private TextView mTvOrderStartPlace;
-        private TextView mTvOrderEndPlace;
+
+        private TextView mTvOrderId;
+        private TextView mTvGoodsName;
+        private TextView mTvOrderTime;
         private TextView mTvOrderStatus;
-        private ImageView mIvOrderThings;
-        private TextView mTvOrderRemark;
-        private TextView mTvOrderLogistics;
-        private TextView mTvOrderDelete;
-        private TextView mTvOrderEdit;
+        private TextView mTvDetail;
+        private TextView mTvFlow;
 
         public Holder(@NonNull View itemView) {
             super(itemView);
-            mTvOrderStartPlace = itemView.findViewById(R.id.tv_order_start_place);
-            mTvOrderEndPlace = itemView.findViewById(R.id.tv_order_end_place);
+
+            mTvOrderId = itemView.findViewById(R.id.tv_order_id);
+            mTvGoodsName = itemView.findViewById(R.id.tv_goods_name);
+            mTvOrderTime = itemView.findViewById(R.id.tv_order_time);
             mTvOrderStatus = itemView.findViewById(R.id.tv_order_status);
-            mIvOrderThings = itemView.findViewById(R.id.iv_order_things);
-            mTvOrderRemark = itemView.findViewById(R.id.tv_order_remark);
-            mTvOrderLogistics = itemView.findViewById(R.id.tv_order_logistics);
-            mTvOrderDelete = itemView.findViewById(R.id.tv_order_delete);
-            mTvOrderEdit = itemView.findViewById(R.id.tv_order_edit);
+            mTvDetail = itemView.findViewById(R.id.tv_detail);
+            mTvFlow = itemView.findViewById(R.id.tv_flow);
+
+
         }
 
         public void bindData(Order order) {
-            mTvOrderStartPlace.setText(order.getStart());
-            mTvOrderEndPlace.setText(order.getEnd());
-            mTvOrderStatus.setText(order.getStatus());
-            mIvOrderThings.setImageResource(R.drawable.ic_launcher_background);
-            mTvOrderRemark.setText(order.getMark());
+            mTvOrderId.setText(String.format("订单号：%s", String.valueOf(order.getId())));
+            mTvGoodsName.setText(String.format("物件名称：%s", order.getGoodsname()));
+            mTvOrderTime.setText(order.getAdddate());
+            mTvOrderStatus.setText(order.getOrderstatus());
+
+            mTvDetail.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //查看详情
+                    if (null != mCommonListener) {
+                        mCommonListener.onDetail(order);
+                    }
+                }
+            });
+            mTvFlow.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //查看物流
+                    if (null != mCommonListener) {
+                        mCommonListener.onFlow(order);
+                    }
+                }
+            });
+
         }
     }
 }

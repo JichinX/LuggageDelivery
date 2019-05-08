@@ -12,10 +12,16 @@ public class WrapperEntity<T> {
     }
 
     public WrapperEntity(T data) {
+        this(null == data ? Status.QUERY_FAILED : Status.SUCCESS);
         this.data = data;
     }
 
     public WrapperEntity() {
+    }
+
+    public WrapperEntity(Status status) {
+        code = status.getCode();
+        msg = status.getMsg();
     }
 
     public int getCode() {

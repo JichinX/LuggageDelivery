@@ -34,4 +34,14 @@ public class UserController {
         }
         return userService.userLogin(uName, uPwd);
     }
+
+    /**
+     * 更新用户信息
+     *
+     * @return
+     */
+    @RequestMapping(value = "/update", method = RequestMethod.PUT)
+    public WrapperEntity<TUser> updateUserInfo(@RequestBody TUser user) {
+        return userService.updateUserInfo(user);
+    }
 }

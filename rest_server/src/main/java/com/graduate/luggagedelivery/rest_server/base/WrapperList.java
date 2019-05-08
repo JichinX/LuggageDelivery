@@ -1,33 +1,51 @@
 package com.graduate.luggagedelivery.rest_server.base;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class WrapperList<T> {
-    private int page;
-    private int size;
-    private ArrayList<T> data;
+    private String msg;
+    private int code;
+    private List<T> data;
 
-    public int getPage() {
-        return page;
+    public WrapperList(Status status) {
+        code = status.getCode();
+        msg = status.getMsg();
     }
 
-    public void setPage(int page) {
-        this.page = page;
+    public WrapperList(List<T> data) {
+        this(null == data ? Status.QUERY_FAILED : Status.SUCCESS);
+        this.data = data;
     }
 
-    public int getSize() {
-        return size;
+    public WrapperList() {
     }
 
-    public void setSize(int size) {
-        this.size = size;
+    public String getMsg() {
+        return msg;
     }
 
-    public ArrayList<T> getData() {
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public List<T> getData() {
         return data;
     }
 
-    public void setData(ArrayList<T> data) {
+    public void setData(List<T> data) {
         this.data = data;
+    }
+
+    public void setStatus(Status success) {
+        code = success.getCode();
+        msg = success.getMsg();
     }
 }

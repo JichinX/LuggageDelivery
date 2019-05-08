@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.xujichang.XBase:base-core:1.0.4-alpha04@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1db27a11178b660d5ec0a3550935e6ec/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1db27a11178b660d5ec0a3550935e6ec/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xujichang.XBase/base-core/1.0.4-alpha04/6dc06899107047db3b5ba5cba00a76c03ae841a8/base-core-1.0.4-alpha04-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xujichang.XBase/base-core/1.0.4-alpha04/da9aa53d7cae9b2328930a98e33f12854ac29193/base-core-1.0.4-alpha04-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -28,11 +28,4 @@ public class CommentFragment extends BaseFragment {
         return inflater.inflate(R.layout.fragment_comment, container, false);
     }
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(CommentViewModel.class);
-        // TODO: Use the ViewModel
-    }
-
 }

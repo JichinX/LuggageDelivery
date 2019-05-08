@@ -10,6 +10,7 @@ android {
         versionCode 100
         versionName "1.0.0"
         vectorDrawables.useSupportLibrary = true
+        multiDexEnabled = true
     }
     buildTypes {
         release {
@@ -21,6 +22,10 @@ android {
         sourceCompatibility 1.8
         targetCompatibility 1.8
     }
+    dataBinding {
+        enabled = true
+    }
+
 }
 repositories {
     flatDir {
@@ -29,7 +34,6 @@ repositories {
 }
 
 dependencies {
-    def baseLib = "1.0.4-alpha04"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -41,6 +45,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'android.arch.navigation:navigation-fragment:1.0.0'
     implementation 'android.arch.navigation:navigation-ui:1.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
 
     implementation "com.squareup.retrofit2:retrofit:$lib.retrofit2"
     implementation "com.squareup.retrofit2:retrofit-converters:$lib.retrofit2"
@@ -60,8 +65,15 @@ dependencies {
 
     // https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxandroid
     implementation "io.reactivex.rxjava2:rxandroid:$lib.rxandroid"
-    implementation "com.github.xujichang.XBase:base-net:$baseLib"
-    implementation "com.github.xujichang.XBase:base-core:$baseLib"
-    implementation "com.github.xujichang.XBase:base-utils:$baseLib"
-    implementation "com.github.xujichang:Utils:1.0.0"
+    implementation "com.github.xujichang.XBase:base-net:$jitpack.xbase"
+    implementation "com.github.xujichang.XBase:base-core:$jitpack.xbase"
+    implementation "com.github.xujichang.XBase:base-utils:$jitpack.xbase"
+    implementation "com.github.xujichang:Utils:$jitpack.xutils"
+
+    implementation "androidx.room:room-runtime:$androidx.room"
+    implementation "androidx.room:room-rxjava2:$androidx.room"
+    implementation "androidx.room:room-guava:$androidx.room"
+    annotationProcessor "androidx.room:room-compiler:$androidx.room"
+
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
 }

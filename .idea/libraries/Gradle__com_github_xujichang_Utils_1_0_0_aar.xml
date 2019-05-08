@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.xujichang:Utils:1.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/90a15828a7faa9188fd44e44b47d49be/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/90a15828a7faa9188fd44e44b47d49be/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/90a15828a7faa9188fd44e44b47d49be/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xujichang/Utils/1.0.0/7a7e50cc8fc22c25a15876842c87924c39295123/Utils-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xujichang/Utils/1.0.0/96448fc8c929521f9694a274581432e6344ebec2/Utils-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -41,4 +41,13 @@ public class UserService implements IUserService {
         wrapperEntity.setData(user);
         return wrapperEntity;
     }
+
+    @Override
+    public WrapperEntity<TUser> updateUserInfo(TUser user) {
+        int result = userMapper.updateByPrimaryKey(user);
+        if (result > 0) {
+            return new WrapperEntity<>(userMapper.selectByPrimaryKey(user.getUserid()));
+        }
+        return new WrapperEntity<>(Status.UPDATE_FAILED);
+    }
 }

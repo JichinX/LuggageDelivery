@@ -1,7 +1,5 @@
 package me.xujichang.luggagedelivery.ui.login;
 
-import android.app.Activity;
-
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -9,7 +7,6 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -27,6 +24,7 @@ import me.xujichang.luggagedelivery.base.WrapperEntity;
 import me.xujichang.luggagedelivery.base.ui.BaseActivity;
 import me.xujichang.luggagedelivery.entity.User;
 import me.xujichang.luggagedelivery.ui.main.MainActivity;
+import me.xujichang.luggagedelivery.util.PrefUtil;
 
 /**
  * 登录页面
@@ -39,8 +37,7 @@ public class LoginActivity extends BaseActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        loginViewModel = ViewModelProviders.of(this, new LoginViewModelFactory())
-                .get(LoginViewModel.class);
+        loginViewModel = ViewModelProviders.of(this).get(LoginViewModel.class);
 
         final EditText usernameEditText = findViewById(R.id.username);
         final EditText passwordEditText = findViewById(R.id.password);
@@ -68,6 +65,7 @@ public class LoginActivity extends BaseActivity {
             public void onChanged(WrapperEntity<User> entity) {
                 if (entity.getCode() == 200) {
                     toActivity(MainActivity.class);
+                    finish();
                 } else {
                     showToast(entity);
                 }
@@ -99,7 +97,7 @@ public class LoginActivity extends BaseActivity {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
                     loginViewModel.login(usernameEditText.getText().toString(),
-                            passwordEditText.getText().toString());
+                            passwordEditText.getText().toString(), false);
                 }
                 return false;
             }
@@ -109,9 +107,12 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 loginViewModel.login(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
+                        passwordEditText.getText().toString(), false);
             }
         });
+        if (PrefUtil.getLoginUserId(this) > 0) {
+            loginViewModel.autoLogin();
+        }
     }
 
     private void updateUiWithUser(LoggedInUserView model) {

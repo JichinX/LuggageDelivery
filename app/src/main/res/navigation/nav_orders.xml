@@ -9,5 +9,40 @@
         android:id="@+id/ordersMainFragment"
         android:name="me.xujichang.luggagedelivery.ui.main.fragments.orders.OrdersMainFragment"
         android:label="orders_main_fragment"
-        tools:layout="@layout/fragment_orders_main" />
+        tools:layout="@layout/fragment_orders_main">
+
+        <argument
+            android:name="type"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_order_detail"
+            app:destination="@id/orderDetailFragment" />
+        <action
+            android:id="@+id/action_order_flow"
+            app:destination="@id/orderFlowFragment" />
+        <action
+            android:id="@+id/action_order_add"
+            app:destination="@id/orderAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="me.xujichang.luggagedelivery.ui.main.fragments.orders.OrderDetailFragment"
+        android:label="fragment_order_detail"
+        tools:layout="@layout/fragment_order_detail">
+        <action
+            android:id="@+id/action_detail_to_flow"
+            app:destination="@id/orderFlowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderFlowFragment"
+        android:name="me.xujichang.luggagedelivery.ui.main.fragments.orders.OrderFlowFragment"
+        android:label="fragment_order_flow"
+        tools:layout="@layout/fragment_order_flow" />
+    <fragment
+        android:id="@+id/orderAddFragment"
+        android:name="me.xujichang.luggagedelivery.OrderAddFragment"
+        android:label="fragment_order_add"
+        tools:layout="@layout/fragment_order_add" />
+
 </navigation>

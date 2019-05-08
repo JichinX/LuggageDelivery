@@ -4,7 +4,8 @@ package me.xujichang.luggagedelivery.data;
  * A generic class that holds a result success w/ data or an error exception.
  */
 public class Result<T> {
-    // hide the private constructor to limit subclass types (Success, Error)
+    private int flag;
+
     private Result() {
     }
 
@@ -20,12 +21,31 @@ public class Result<T> {
         return "";
     }
 
-    // Success sub-class
+    public int getFlag() {
+        return flag;
+    }
+
+    public void setFlag(int pFlag) {
+        flag = pFlag;
+    }
+
+    public Result(int pFlag) {
+        flag = pFlag;
+    }
+
     public final static class Success<T> extends Result {
         private T data;
 
-        public Success(T data) {
+        public Success(T data, int flag) {
+            super(flag);
             this.data = data;
+        }
+
+        public Success() {
+        }
+
+        public Success(int pFlag) {
+            super(pFlag);
         }
 
         public T getData() {
@@ -33,12 +53,17 @@ public class Result<T> {
         }
     }
 
-    // Error sub-class
     public final static class Error extends Result {
         private Exception error;
 
-        public Error(Exception error) {
+        public Error(Exception error, int flag) {
+            super(flag);
             this.error = error;
+
+        }
+
+        public Error(int pFlag) {
+            super(pFlag);
         }
 
         public Exception getError() {
