@@ -6,3 +6,5 @@ release/
 src/main/java/me/xujichang/luggagedelivery/db/
 H5Src/LuggageDelivery/unpackage/
 server/WebRoot/resource/
+/server/out/
+.idea/workspace.xml
