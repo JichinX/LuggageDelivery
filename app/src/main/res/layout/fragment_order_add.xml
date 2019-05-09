@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
 
@@ -12,218 +12,223 @@
             type="me.xujichang.luggagedelivery.OrderAddFragment" />
     </data>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="@drawable/divider_grey"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:showDividers="middle"
-        tools:context=".OrderAddFragment">
+        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:padding="8dp"
-                android:text="货物名称：" />
-
-            <EditText
-                android:id="@+id/et_order_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:background="@null"
-                android:padding="8dp"
-                android:text="@={order.goodsname}" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:padding="8dp"
-                android:text="货物重量：" />
-
-            <EditText
-                android:id="@+id/et_order_weight"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:background="@null"
-                android:padding="8dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:padding="8dp"
-                android:text="收件人姓名：" />
-
-            <EditText
-                android:id="@+id/et_order_person_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:background="@null"
-                android:padding="8dp"
-                android:text="@={order.username}" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:padding="8dp"
-                android:text="收件人电话：" />
-
-            <EditText
-                android:id="@+id/et_order_person_phone"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:background="@null"
-                android:padding="8dp"
-                android:text="@={order.userphone}" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:padding="8dp"
-                android:text="收件人地址：" />
-
-            <EditText
-                android:id="@+id/et_order_person_address"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:background="@null"
-                android:padding="8dp"
-                android:text="@={order.address}" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:padding="8dp"
-                android:text="寄件人姓名：" />
-
-            <EditText
-                android:id="@+id/et_order_person_from_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:background="@null"
-                android:padding="8dp"
-                android:text="@={order.fromusername}" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:padding="8dp"
-                android:text="寄件人电话：" />
-
-            <EditText
-                android:id="@+id/et_order_person_from_phone"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:background="@null"
-                android:enabled="false"
-                android:padding="8dp"
-                android:text="@={order.fromuserphone}" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:padding="8dp"
-                android:text="寄件人地址：" />
-
-            <EditText
-                android:id="@+id/et_order_person_from_address"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:background="@null"
-                android:padding="8dp"
-                android:text="@={order.fromuseraddress}" />
-        </LinearLayout>
-
-        <LinearLayout
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical">
+            android:divider="@drawable/divider_grey"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:showDividers="middle"
+            tools:context=".OrderAddFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="8dp"
+                    android:text="货物名称：" />
+
+                <EditText
+                    android:id="@+id/et_order_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:padding="8dp"
+                    android:text="@={order.goodsname}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="8dp"
+                    android:text="货物重量：" />
+
+                <EditText
+                    android:id="@+id/et_order_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="8dp"
+                    android:text="收件人姓名：" />
+
+                <EditText
+                    android:id="@+id/et_order_person_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:padding="8dp"
+                    android:text="@={order.username}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="8dp"
+                    android:text="收件人电话：" />
+
+                <EditText
+                    android:id="@+id/et_order_person_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:padding="8dp"
+                    android:text="@={order.userphone}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="8dp"
+                    android:text="收件人地址：" />
+
+                <EditText
+                    android:id="@+id/et_order_person_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:padding="8dp"
+                    android:text="@={order.address}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="8dp"
+                    android:text="寄件人姓名：" />
+
+                <EditText
+                    android:id="@+id/et_order_person_from_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:padding="8dp"
+                    android:text="@={order.fromusername}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="8dp"
+                    android:text="寄件人电话：" />
+
+                <EditText
+                    android:id="@+id/et_order_person_from_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:padding="8dp"
+                    android:text="@={order.fromuserphone}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="8dp"
+                    android:text="寄件人地址：" />
+
+                <EditText
+                    android:id="@+id/et_order_person_from_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:padding="8dp"
+                    android:text="@={order.fromuseraddress}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="8dp"
+                    android:text="配送站：" />
+
+                <Spinner
+                    android:id="@+id/spinner_order_dept"
+                    selectDept="@={order.startDeptId}"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4">
+
+                </Spinner>
+            </LinearLayout>
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:padding="8dp"
-                android:text="配送站：" />
-
-            <Spinner
-                android:id="@+id/spinner_order_dept"
-                selectDept="@={order.startDeptId}"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4">
-
-            </Spinner>
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_btn"
+                android:onClick="@{(user)->fragment.addOrder(order)}"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:text="添加"
+                android:textColor="@color/white" />
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/bg_btn"
-            android:onClick="@{(user)->fragment.addOrder(order)}"
-            android:paddingLeft="16dp"
-            android:paddingTop="8dp"
-            android:paddingRight="16dp"
-            android:paddingBottom="8dp"
-            android:text="添加"
-            android:textColor="@color/white" />
-    </LinearLayout>
+    </ScrollView>
 </layout>

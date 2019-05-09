@@ -7,37 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bc8e0f8-9441-4bab-9140-e3c3ac56023a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/db/DeptDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/entity/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/net/api/MainApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/util/DeptUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_done_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/util/StringTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/navEditor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/OrderAddFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/OrderAddFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/base/BaseViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/base/BaseViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/data/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/data/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/databinding/SpinnerBindingAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/databinding/SpinnerBindingAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/db/AppDatabases.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/db/AppDatabases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/net/api/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/net/api/UserApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/MainViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/MainViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/adapter/FlowsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/adapter/FlowsAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/fragments/OrderViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/fragments/OrderViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/fragments/PersonalFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/fragments/PersonalFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/fragments/PersonalViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/fragments/PersonalViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/fragments/orders/OrderFlowFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/me/xujichang/luggagedelivery/ui/main/fragments/orders/OrderFlowFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_order_add.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_order_add.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_personal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/fragment_personal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rest_server/out/artifacts/rest_server_jar/rest_server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_server/out/artifacts/rest_server_jar/rest_server.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/service/IDeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/service/IDeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/service/IFeedBackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/service/IFeedBackServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/service/IOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_server/src/main/java/com/graduate/luggagedelivery/rest_server/service/IOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
@@ -198,7 +168,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="87" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
@@ -407,12 +377,12 @@
       <workItem from="1556985272249" duration="3000" />
       <workItem from="1557220103537" duration="3418000" />
       <workItem from="1557295988506" duration="22000" />
-      <workItem from="1557308873687" duration="176000" />
+      <workItem from="1557308873687" duration="181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32714000" />
+    <option name="totallyTimeSpent" value="32719000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -424,10 +394,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="87" width="1680" height="1027" extended-state="1" />
-    <editor active="true" />
+    <frame x="2" y="23" width="1680" height="1027" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23687424" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23687424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -435,7 +404,7 @@
       <window_info id="Web" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993895" visible="true" weight="0.5197368" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993895" weight="0.5197368" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6754386" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
