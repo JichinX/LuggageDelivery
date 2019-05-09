@@ -1,5 +1,7 @@
 package me.xujichang.luggagedelivery.ui.main.fragments;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -9,13 +11,18 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import me.xujichang.luggagedelivery.R;
+import me.xujichang.luggagedelivery.base.Const;
 import me.xujichang.luggagedelivery.base.ui.BaseFragment;
+import me.xujichang.luggagedelivery.data.Result;
 import me.xujichang.luggagedelivery.databinding.FragmentPersonalBinding;
 import me.xujichang.luggagedelivery.entity.User;
 import me.xujichang.luggagedelivery.ui.App;
+import me.xujichang.luggagedelivery.ui.login.LoginActivity;
+import me.xujichang.luggagedelivery.util.PrefUtil;
 
 /**
  * Des:LuggageDelivery - me.xujichang.luggagedelivery.ui.main.fragments
@@ -50,6 +57,7 @@ public class PersonalFragment extends BaseFragment {
         return mBinding.getRoot();
     }
 
+    @SuppressLint("RestrictedApi")
     private void initDefault(boolean enable) {
         mBinding.etPersonLoc.setEnabled(enable);
         mBinding.etPersonMail.setEnabled(enable);
@@ -60,6 +68,7 @@ public class PersonalFragment extends BaseFragment {
         mBinding.etPersonUserName.setEnabled(enable);
         mBinding.etPersonBirth.setEnabled(enable);
         mBinding.spinnerPersonGender.setEnabled(enable);
+        mBinding.fabEnableApply.setVisibility(enable ? View.VISIBLE : View.GONE);
     }
 
     @Override
@@ -70,13 +79,45 @@ public class PersonalFragment extends BaseFragment {
 
     private void initViewModel() {
         mViewModel = ViewModelProviders.of(this).get(PersonalViewModel.class);
+
+        mViewModel.getUserLiveData().observe(getViewLifecycleOwner(), new Observer<User>() {
+            @Override
+            public void onChanged(User pUser) {
+                mBinding.setUser(pUser);
+            }
+        });
+        mViewModel.getResult().observe(getViewLifecycleOwner(), new Observer<Result>() {
+            @Override
+            public void onChanged(Result pResult) {
+                if (pResult.getFlag() == Const.Flag.INFO_UPDATE) {
+                    initDefault(false);
+                    mViewModel.clearResult();
+                }
+            }
+        });
     }
 
-    public void onFlabClick(View view) {
+    @SuppressLint("RestrictedApi")
+    public void onInfoEdit(View view) {
         boolean enable = (boolean) view.getTag();
         view.setTag(!enable);
         initDefault(!enable);
         User vUser = mBinding.getUser();
-        Log.i(TAG, "onFlabClick: " + vUser);
+        Log.i(TAG, "onInfoEdit: " + vUser);
+    }
+
+    public void onInfoApply() {
+        User vUser = mBinding.getUser();
+        mViewModel.updateUserInfo(vUser, Const.Flag.INFO_UPDATE);
+    }
+
+    /**
+     * 退出账号
+     */
+    public void onLoginOut() {
+        PrefUtil.clearLoginInfo(getContext());
+        App.sUser = null;
+        startActivity(new Intent(getContext(), LoginActivity.class));
+        getActivity().finish();
     }
 }

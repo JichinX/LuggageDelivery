@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.xujichang.luggagedelivery.R;
+import me.xujichang.luggagedelivery.base.Const;
 import me.xujichang.luggagedelivery.base.ui.BaseFragment;
 import me.xujichang.luggagedelivery.data.Result;
 import me.xujichang.luggagedelivery.entity.Order;
@@ -94,7 +95,7 @@ public class OrdersMainFragment extends BaseFragment {
             @Override
             public void onSearch(String key) {
                 //搜索
-                mViewModel.searchOrder(Long.parseLong(key));
+                mViewModel.searchOrder(Long.parseLong(key), Const.Flag.ORDER_SEARCH);
             }
         });
         mFlbAddOrder.setOnClickListener(new View.OnClickListener() {
@@ -130,7 +131,16 @@ public class OrdersMainFragment extends BaseFragment {
         mViewModel.getResult().observe(getViewLifecycleOwner(), new Observer<Result>() {
             @Override
             public void onChanged(Result result) {
+                if (result.getFlag() == Const.Flag.ORDER_SEARCH) {
+                    showTip(result, new Result.CallBack() {
 
+                        @Override
+                        public void onSuccess() {
+
+                        }
+                    });
+                    mViewModel.clearResult();
+                }
             }
         });
         mFlbAddOrder.setVisibility(mViewModel.getType() == 1 ? View.VISIBLE : View.GONE);

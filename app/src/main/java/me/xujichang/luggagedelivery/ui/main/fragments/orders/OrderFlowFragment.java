@@ -11,7 +11,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,10 +18,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.xujichang.luggagedelivery.R;
+import me.xujichang.luggagedelivery.entity.Dept;
 import me.xujichang.luggagedelivery.entity.Flow;
 import me.xujichang.luggagedelivery.entity.Order;
 import me.xujichang.luggagedelivery.ui.main.adapter.FlowsAdapter;
 import me.xujichang.luggagedelivery.ui.main.fragments.OrderViewModel;
+import me.xujichang.luggagedelivery.util.DeptUtil;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -79,21 +80,21 @@ public class OrderFlowFragment extends Fragment {
     private void initViewModel() {
         mViewModel = ViewModelProviders.of(getActivity()).get(OrderViewModel.class);
 
-        mViewModel.getFlowLiveData().observe(getViewLifecycleOwner(), new Observer<List<Flow>>() {
-            @Override
-            public void onChanged(List<Flow> pFlows) {
-                mFlows.clear();
-                mFlows.addAll(pFlows);
-                mFlowsAdapter.notifyDataSetChanged();
-            }
-        });
+        mViewModel.getFlowLiveData()
+                .observe(getViewLifecycleOwner(), new Observer<List<Flow>>() {
+                    @Override
+                    public void onChanged(List<Flow> pFlows) {
+                        mFlows.clear();
+                        mFlows.addAll(pFlows);
+                        mFlowsAdapter.notifyDataSetChanged();
+                    }
+                });
         patch(mViewModel.getOrder());
         mViewModel.getFlowLog();
-
     }
 
     private void patch(Order pOrder) {
-        mTvStart.setText(String.valueOf(pOrder.getStartDeptId()));
-        mTvEnd.setText(String.valueOf(pOrder.getEndDeptId()));
+        mTvStart.setText(String.format("配送站：%s", DeptUtil.getDept(pOrder.getStartDeptId())));
+        mTvEnd.setText(String.format("终点站：%s", DeptUtil.getDept(pOrder.getEndDeptId())));
     }
 }

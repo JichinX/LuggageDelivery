@@ -4,6 +4,7 @@ import android.app.Application;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import java.util.Collections;
@@ -14,6 +15,9 @@ import me.xujichang.luggagedelivery.base.BaseViewModel;
 import me.xujichang.luggagedelivery.base.WrapperEntity;
 import me.xujichang.luggagedelivery.base.WrapperList;
 import me.xujichang.luggagedelivery.data.Result;
+import me.xujichang.luggagedelivery.db.AppDatabases;
+import me.xujichang.luggagedelivery.db.DeptDao;
+import me.xujichang.luggagedelivery.entity.Dept;
 import me.xujichang.luggagedelivery.entity.Flow;
 import me.xujichang.luggagedelivery.entity.Order;
 import me.xujichang.luggagedelivery.net.api.OrderApi;
@@ -26,6 +30,7 @@ public class OrderViewModel extends BaseViewModel {
     private MutableLiveData<List<Order>> mOrderLiveData;
     private int mType;
     private Order mOrder;
+    private DeptDao mDeptDao;
     private MutableLiveData<List<Flow>> mFlowLiveData;
 
     public MutableLiveData<List<Order>> getOrderLiveData() {
@@ -52,6 +57,7 @@ public class OrderViewModel extends BaseViewModel {
         super(application);
         mOrderLiveData = new MutableLiveData<>();
         mFlowLiveData = new MutableLiveData<>();
+        mDeptDao = AppDatabases.getInstance(application).mDeptDao();
     }
 
     public MutableLiveData<List<Order>> getOrders() {
@@ -122,7 +128,7 @@ public class OrderViewModel extends BaseViewModel {
         return mType;
     }
 
-    public void searchOrder(long pKey) {
+    public void searchOrder(long pKey, int flag) {
         RetrofitCenter.getApi(OrderApi.class)
                 .searchOrder(pKey)
                 .compose(RxSchedulers.observableTransformer_io_main())
@@ -131,8 +137,9 @@ public class OrderViewModel extends BaseViewModel {
                     public void onNext(WrapperEntity<Order> pOrderWrapperList) {
                         if (pOrderWrapperList.getCode() == 200) {
                             mOrderLiveData.setValue(Collections.singletonList(pOrderWrapperList.getData()));
+                            mResultLiveData.setValue(new Result.Success(flag));
                         } else {
-
+                            mResultLiveData.setValue(new Result.Error(pOrderWrapperList.toErrorString(), flag));
                         }
                     }
 
@@ -198,5 +205,9 @@ public class OrderViewModel extends BaseViewModel {
                         Log.i(TAG, "onComplete: ");
                     }
                 });
+    }
+
+    public LiveData<List<Dept>> getDepts() {
+        return mDeptDao.getAllDept();
     }
 }

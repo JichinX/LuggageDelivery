@@ -6,13 +6,16 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
+import me.xujichang.luggagedelivery.entity.Dept;
 import me.xujichang.luggagedelivery.entity.User;
 
-@Database(entities = {User.class}, version = 1, exportSchema = false)
+@Database(entities = {User.class, Dept.class}, version = 1, exportSchema = false)
 public abstract class AppDatabases extends RoomDatabase {
     private static volatile AppDatabases INSTANCE;
 
     public abstract UserDao mUserDao();
+
+    public abstract DeptDao mDeptDao();
 
     public static AppDatabases getInstance(Context context) {
         if (INSTANCE == null) {

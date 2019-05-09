@@ -27,4 +27,8 @@ public class BaseViewModel extends AndroidViewModel {
     public MutableLiveData<Result> getResult() {
         return mResultLiveData;
     }
+
+    public void clearResult() {
+        mResultLiveData.setValue(new Result.Empty());
+    }
 }

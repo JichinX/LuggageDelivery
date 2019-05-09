@@ -9,6 +9,8 @@ import com.graduate.luggagedelivery.rest_server.entity.TFlowLog;
 import com.graduate.luggagedelivery.rest_server.entity.TFlowLogExample;
 import com.graduate.luggagedelivery.rest_server.entity.TUserOrder;
 import com.graduate.luggagedelivery.rest_server.entity.TUserOrderExample;
+import com.graduate.luggagedelivery.rest_server.util.StringTool;
+import org.apache.logging.log4j.util.Strings;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -54,7 +56,13 @@ public class IOrderServiceImpl implements IOrderService {
 
     @Override
     public WrapperEntity<Void> addOrder(TUserOrder order) {
-        int result = orderMapper.insert(order);
+        //设置默认值
+        long ms = System.currentTimeMillis();
+        order.setMoney(0.0);
+        order.setOrderstatus("新订单");
+        order.setAdddate(StringTool.formatTime(ms));
+        order.setId(ms);
+        int result = orderMapper.insertSelective(order);
         if (result > 0) {
             return new WrapperEntity<>(Status.SUCCESS);
         }

@@ -40,7 +40,7 @@ public class UserController {
      *
      * @return
      */
-    @RequestMapping(value = "/update", method = RequestMethod.PUT)
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
     public WrapperEntity<TUser> updateUserInfo(@RequestBody TUser user) {
         return userService.updateUserInfo(user);
     }

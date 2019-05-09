@@ -31,7 +31,7 @@ public class IDeptServiceImpl implements IDeptService {
     @Override
     public WrapperList<TDept> addDept(TDept dept) {
         WrapperList<TDept> wrapperList = new WrapperList<>();
-        int result = mapper.insert(dept);
+        int result = mapper.insertSelective(dept);
         if (result > 0) {
             return getDepts();
         } else {

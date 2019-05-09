@@ -4,7 +4,7 @@ package me.xujichang.luggagedelivery.data;
  * A generic class that holds a result success w/ data or an error exception.
  */
 public class Result<T> {
-    private int flag;
+    private int flag = -1;
 
     private Result() {
     }
@@ -66,8 +66,21 @@ public class Result<T> {
             super(pFlag);
         }
 
+        public Error(String pMsg, int flag) {
+            super(flag);
+            error = new RuntimeException(pMsg);
+        }
+
         public Exception getError() {
             return this.error;
         }
+    }
+
+    public static final class Empty extends Result {
+
+    }
+
+    public interface CallBack {
+        void onSuccess();
     }
 }

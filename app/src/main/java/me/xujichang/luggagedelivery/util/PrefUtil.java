@@ -17,4 +17,8 @@ public class PrefUtil {
     private static SharedPreferences getDefaultPrefs(Context pContext) {
         return PreferenceManager.getDefaultSharedPreferences(pContext);
     }
+
+    public static void clearLoginInfo(Context pContext) {
+        getDefaultPrefs(pContext).edit().clear().apply();
+    }
 }

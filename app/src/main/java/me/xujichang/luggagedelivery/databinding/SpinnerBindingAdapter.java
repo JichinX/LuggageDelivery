@@ -8,6 +8,8 @@ import androidx.databinding.BindingAdapter;
 import androidx.databinding.InverseBindingAdapter;
 import androidx.databinding.InverseBindingListener;
 
+import me.xujichang.luggagedelivery.util.DeptUtil;
+
 /**
  * Des:LuggageDelivery - me.xujichang.luggagedelivery.databinding
  *
@@ -48,12 +50,14 @@ public class SpinnerBindingAdapter {
 
     @BindingAdapter("selectDept")
     public static void selectDept(Spinner pSpinner, long index) {
-
+        int _index = DeptUtil.getIndex(index);
+        pSpinner.setSelection(_index);
     }
 
     @InverseBindingAdapter(attribute = "selectDept", event = "deptChange")
     public static long setDept(Spinner pSpinner) {
-        return 1L;
+        int index = pSpinner.getSelectedItemPosition();
+        return DeptUtil.sDepts.get(index).getId();
     }
 
     @BindingAdapter("deptChange")

@@ -11,7 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import me.xujichang.luggagedelivery.R;
+import me.xujichang.luggagedelivery.entity.Dept;
 import me.xujichang.luggagedelivery.entity.Flow;
+import me.xujichang.luggagedelivery.util.DeptUtil;
 
 public class FlowsAdapter extends RecyclerView.Adapter<FlowsAdapter.Holder> {
     private List<Flow> mFlows;
@@ -54,7 +56,7 @@ public class FlowsAdapter extends RecyclerView.Adapter<FlowsAdapter.Holder> {
 
         public void bindData(Flow pFlow) {
 
-            mTvDept.setText(String.valueOf(pFlow.getDeptId()));
+            mTvDept.setText(String.format("【%s】 - ", DeptUtil.getDept(pFlow.getDeptId())));
             mTvDate.setText(pFlow.getAdddate());
             mTvStatus.setText(pFlow.getNote());
         }

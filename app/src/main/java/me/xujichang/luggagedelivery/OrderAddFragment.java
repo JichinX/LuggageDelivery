@@ -2,24 +2,28 @@ package me.xujichang.luggagedelivery;
 
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.SpinnerAdapter;
 
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import me.xujichang.luggagedelivery.base.Const;
+import me.xujichang.luggagedelivery.base.ui.BaseFragment;
 import me.xujichang.luggagedelivery.data.Result;
 import me.xujichang.luggagedelivery.databinding.FragmentOrderAddBinding;
 import me.xujichang.luggagedelivery.entity.Order;
+import me.xujichang.luggagedelivery.ui.App;
 import me.xujichang.luggagedelivery.ui.main.fragments.OrderViewModel;
+import me.xujichang.luggagedelivery.util.DeptUtil;
+import me.xujichang.util.tool.StringTool;
 
 
 /**
@@ -27,13 +31,17 @@ import me.xujichang.luggagedelivery.ui.main.fragments.OrderViewModel;
  * Use the {@link OrderAddFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class OrderAddFragment extends Fragment {
+public class OrderAddFragment extends BaseFragment {
     private FragmentOrderAddBinding mAddBinding;
     private OrderViewModel mViewModel;
     private Order mOrder = new Order();
+    private SpinnerAdapter mSpinnerAdapter;
 
     public OrderAddFragment() {
-        // Required empty public constructor
+        mOrder.setFromuserphone(App.sUser.getUserphone());
+        mOrder.setFromusername(App.sUser.getUsername());
+        mOrder.setFromuseraddress(App.sUser.getUseraddress());
+
     }
 
     public static OrderAddFragment newInstance(String param1, String param2) {
@@ -56,6 +64,7 @@ public class OrderAddFragment extends Fragment {
         mAddBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_order_add, container, false);
         mAddBinding.setFragment(this);
         mAddBinding.setOrder(mOrder);
+
         return mAddBinding.getRoot();
     }
 
@@ -66,18 +75,24 @@ public class OrderAddFragment extends Fragment {
     }
 
     private void initViewModel() {
+        mSpinnerAdapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1, android.R.id.text1, DeptUtil.sDepts);
         mViewModel = ViewModelProviders.of(getActivity()).get(OrderViewModel.class);
 
         mViewModel.getResult().observe(getViewLifecycleOwner(), new Observer<Result>() {
             @Override
             public void onChanged(Result pResult) {
                 if (pResult.getFlag() == Const.Flag.ORDER_ADD) {
-                    if (pResult instanceof Result.Success) {
-                        NavHostFragment.findNavController(getParentFragment()).navigateUp();
-                    }
+                    showTip(pResult, new Result.CallBack() {
+                        @Override
+                        public void onSuccess() {
+                            NavHostFragment.findNavController(getParentFragment()).navigateUp();
+                        }
+                    });
+                    mViewModel.clearResult();
                 }
             }
         });
+        mAddBinding.spinnerOrderDept.setAdapter(mSpinnerAdapter);
     }
 
     /**
@@ -86,6 +101,7 @@ public class OrderAddFragment extends Fragment {
      * @param pOrder
      */
     public void addOrder(Order pOrder) {
+        pOrder.setGoodsweight(Double.parseDouble(mAddBinding.etOrderWeight.getText().toString()));
         mViewModel.addOrder(pOrder, 100);
     }
 }

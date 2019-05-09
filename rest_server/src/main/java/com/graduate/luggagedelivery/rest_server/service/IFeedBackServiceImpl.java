@@ -28,6 +28,7 @@ public class IFeedBackServiceImpl implements IFeedBackService {
     public WrapperList<TFeedback> queryFeedbacks(String phone) {
         TFeedbackExample example = new TFeedbackExample();
         example.createCriteria().andUserphoneEqualTo(phone);
+        example.setOrderByClause(" id desc");
         List<TFeedback> tFeedbacks = mapper.selectByExampleWithBLOBs(example);
         if (null == tFeedbacks) {
             return new WrapperList<>(Status.QUERY_FAILED);

@@ -98,7 +98,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_orderDetailFragment_to_orderFlowFragment">
+                            <entry key="action_detail_to_flow">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -131,17 +131,17 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_detail">
+                            <entry key="action_order_add">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_flow">
+                            <entry key="action_order_detail">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_ordersMainFragment_to_orderAddFragment">
+                            <entry key="action_order_flow">
                               <value>
                                 <LayoutPositions />
                               </value>
