@@ -1,10 +1,12 @@
 package me.xujichang.luggagedelivery.data;
 
+import static me.xujichang.luggagedelivery.base.Const.Flag.RESULT_DEFAULT_FLAG;
+
 /**
  * A generic class that holds a result success w/ data or an error exception.
  */
-public class Result<T> {
-    private int flag = -1;
+public class Result {
+    private int flag = RESULT_DEFAULT_FLAG;
 
     private Result() {
     }
@@ -54,9 +56,9 @@ public class Result<T> {
     }
 
     public final static class Error extends Result {
-        private Exception error;
+        private Throwable error;
 
-        public Error(Exception error, int flag) {
+        public Error(Throwable error, int flag) {
             super(flag);
             this.error = error;
 
@@ -71,7 +73,12 @@ public class Result<T> {
             error = new RuntimeException(pMsg);
         }
 
-        public Exception getError() {
+        public Error(Throwable pThrowable) {
+            this.error = pThrowable;
+
+        }
+
+        public Throwable getError() {
             return this.error;
         }
     }

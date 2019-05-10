@@ -29,13 +29,13 @@
             <value>com.mysql.jdbc.Driver</value>
         </property>
         <property name="jdbcUrl">
-            <value>jdbc:mysql://localhost/db_kuaidi?useUnicode=true&amp;characterEncoding=UTF-8</value>
+            <value>jdbc:mysql://localhost/kuaidi?useUnicode=true&amp;characterEncoding=UTF-8</value>
         </property>
         <property name="user">
             <value>root</value>
         </property>
         <property name="password">
-            <value>hsl521xjc</value>
+            <value>mlx120011629</value>
         </property>
         <property name="maxPoolSize">
             <value>80</value>

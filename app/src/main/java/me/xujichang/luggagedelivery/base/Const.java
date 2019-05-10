@@ -18,5 +18,6 @@ public final class Const {
         public static final int ORDER_ADD = 100;
         public static final int INFO_UPDATE = 101;
         public static final int ORDER_SEARCH = 102;
+        public static final int RESULT_DEFAULT_FLAG = -1;
     }
 }

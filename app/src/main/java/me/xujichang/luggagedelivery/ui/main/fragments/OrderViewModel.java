@@ -86,7 +86,7 @@ public class OrderViewModel extends BaseViewModel {
 
                     @Override
                     public void onError(Throwable e) {
-
+                        mResultLiveData.setValue(new Result.Error(e));
                     }
 
                     @Override
@@ -110,7 +110,7 @@ public class OrderViewModel extends BaseViewModel {
 
                     @Override
                     public void onError(Throwable e) {
-
+                        mResultLiveData.setValue(new Result.Error(e));
                     }
 
                     @Override
@@ -145,7 +145,7 @@ public class OrderViewModel extends BaseViewModel {
 
                     @Override
                     public void onError(Throwable e) {
-
+                        mResultLiveData.setValue(new Result.Error(e));
                     }
 
                     @Override
@@ -171,7 +171,7 @@ public class OrderViewModel extends BaseViewModel {
 
                     @Override
                     public void onError(Throwable e) {
-
+                        mResultLiveData.setValue(new Result.Error(e));
                     }
 
                     @Override
@@ -197,7 +197,7 @@ public class OrderViewModel extends BaseViewModel {
 
                     @Override
                     public void onError(Throwable e) {
-                        Log.i(TAG, "onError: ");
+                        mResultLiveData.setValue(new Result.Error(e, flag));
                     }
 
                     @Override

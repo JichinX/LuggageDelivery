@@ -2,12 +2,837 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="server:Web exploded" />
+      <artifact name="server:Web" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bc8e0f8-9441-4bab-9140-e3c3ac56023a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../rest_server/out/artifacts/rest_server_jar/rest_server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_server/out/artifacts/rest_server_jar/rest_server.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/server_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/server_Web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/Dept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/Feedback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/FlowLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/Line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/LineStation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/SessionBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/Transport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/TransportOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/Truck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/UserOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/main/SimpleUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/main/SysUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/entity/main/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/action/SignAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/action/sys/ADept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/action/sys/AFeedback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/action/sys/ALine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/action/sys/ATruck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/action/sys/DeptOperAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/action/sys/SimpleUserAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/action/sys/SysUserAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/action/sys/UserOperAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/dao/ISysDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/dao/impl/SysDaoImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/dao/impl/SysDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/biz/web/service/impl/BizService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/common/action/struts/BaseAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/common/dao/hibernate/BaseDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/common/dao/hibernate/BaseHibernateDao$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/common/dao/hibernate/BaseHibernateDao$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/common/dao/hibernate/BaseHibernateDao$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/common/dao/hibernate/BaseHibernateDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/common/filter/SessionFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/common/filter/WL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/common/service/BaseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/config/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/struts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/Constant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/DateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/FieldUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/FileUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/MD5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/MapUtil$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/MapUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/MathExtend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/MessageUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/NumberUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/SearchParamBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/classes/util/StringUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/common/clear.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/common/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/common/exit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/common/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/common/success.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/modifySelf.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/select/db_select.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/select/selectUserOrder.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/select/uploadFileSuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/addDept.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/addLine.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/addSimpleUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/addSysUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/addTransport.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/addTruck.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/getDeptJoinTransport.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/getDeptTransport.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/listDept.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/listDeptTransport.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/listDeptUserOrder.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/listLine.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/listSimpleUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/listSysUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/listTruck.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/modifyDept.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/modifyDeptUserOrder.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/modifyLine.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/modifySimpleUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/modifySysUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/modifyTruck.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/sys/queryDeptJoinTransport.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/user/addFeedback.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/user/addUserOrder.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/user/getMyOrder.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/user/getMyOrderRecv.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/user/listFeedback.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/user/listUserOrder.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/user/listUserOrderRecv.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/jsp/user/modifyFeedback.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/antlr-2.7.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/asm-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/asm-commons-3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/asm-tree-3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/aspectjrt-1.6.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/aspectjweaver-1.6.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/c3p0-0.9.2-pre5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/cglib-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-beanutils-1.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-codec-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-collections-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-dbcp-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-digester-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-fileupload-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-httpclient-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-io-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-lang-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-lang3-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-logging-api-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-pool-1.5.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/commons-validator-1.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/ehcache-core-2.4.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/freemarker-2.3.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/hibernate-commons-annotations-3.2.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/hibernate-core-3.6.10.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/hibernate-ehcache-3.6.10.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/javassist-3.11.0.GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/json.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/jta-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/junit-4.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/kaptcha-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/log4j-1.2.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/mchange-commons-java-0.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/mysql-connector-java-8.0.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/ognl-3.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/ojdbc6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/oro-2.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/serializer-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/slf4j-api-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-aop-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-asm-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-aspects-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-beans-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-context-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-context-support-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-core-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-expression-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-jdbc-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-orm-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-struts-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-test-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-tx-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-web-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/spring-webmvc-3.1.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/sqljdbc4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/struts-1.2.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/struts2-convention-plugin-2.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/struts2-core-2.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/struts2-json-plugin-2.3.15.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/struts2-spring-plugin-2.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/struts2-tiles-plugin-2.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/tiles-api-2.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/tiles-core-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/tiles-jsp-2.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/xalan-2.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/xml-apis-1.3.04.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/lib/xwork-core-2.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/chart/g.bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/chart/g.dot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/chart/g.line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/chart/g.pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/chart/g.raphael.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/chart/raphael-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/chart/raphael.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/dwz.frag.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/exit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.alertMsg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.barDrag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.checkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.combox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.contextmenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.cssTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.database.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.dialogDrag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.drag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.effects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.history.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.navTab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.pagination.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.panel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.print.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.regional.zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.resize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.scrollCenter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.sortDrag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.stable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.switchEnv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.taskBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.util.date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.util.number.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/dwz.validate.method.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/gxh4hqt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/jarisplayer/JarisFLVPlayer.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/jarisplayer/expressInstall.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/jarisplayer/jarisflvplayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/jarisplayer/swfobject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/jquery-1.7.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/jquery-1.7.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/jquery.bgiframe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/jquery.easing.1.3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/js/speedup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/login/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/login/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/login/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/login/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/map.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/reg.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/accordion/accordion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/account_info_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/alert/alertpanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/alert/alertpanel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/button/button_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/button/imgX.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/button/imgX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/dialog/dialogpanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/dialog/dialogpanel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/form/input_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/form/input_bt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/grid/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/grid/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/grid/resizeCol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/grid/tableth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/header_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/layout/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/layout/taskbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/layout/taskbar_control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/layout/taskbar_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/layout/toggleSidebar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/listLine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/menu/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/menu/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/order_down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/order_up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/pageHeader_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/panel/panel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/panel/panel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/progressBar/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/progressBar/progressBar_l.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/progressBar/progressBar_m.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/progressBar/progressBar_s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/search-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/search-bt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/shadow/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/shadow/shadow_c_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/shadow/shadow_c_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/shadow/shadow_c_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/shadow/shadow_f_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/shadow/shadow_f_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/shadow/shadow_f_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/shadow/shadow_h_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/shadow/shadow_h_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/shadow/shadow_h_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/tabs/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/tabs/tabscontrol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/tabs/tabspage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/tabs/tabspage_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/tabs/tabspanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/tree/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/tree/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/tree/folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/images/tree/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/azure/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/css/core.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/css/ieHack.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/css/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/accordion/accordion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/account_info_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/alert/alertpanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/alert/alertpanel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/button/button_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/button/imgX.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/button/toleft.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/button/toleftone.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/button/toright.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/button/torightone.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/dialog/dialogpanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/dialog/dialogpanel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/form/input_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/form/input_bt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/grid/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/grid/resizeCol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/grid/tableth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/header_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/layout/taskbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/layout/taskbar_control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/layout/taskbar_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/layout/toggleSidebar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/listLine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/login_banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/login_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/login_content_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/login_header_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/login_list.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/login_logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/login_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/login_title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/menu/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/order_down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/order_up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/pageHeader_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/panel/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/panel/panel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/panel/panel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/progressBar/progressBar_l.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/progressBar/progressBar_m.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/progressBar/progressBar_s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/search-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/search-bt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/shadow/shadow_c_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/shadow/shadow_c_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/shadow/shadow_c_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/shadow/shadow_f_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/shadow/shadow_f_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/shadow/shadow_f_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/shadow/shadow_h_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/shadow/shadow_h_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/shadow/shadow_h_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/tabs/tabscontrol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/tabs/tabspage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/tabs/tabspage_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/tabs/tabspanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/themeButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/tree/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/tree/folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/images/tree/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default - 副本/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/accordion/accordion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/account_info_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/alert/alertpanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/alert/alertpanel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/button/button_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/button/imgX.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/button/toleft.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/button/toleftone.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/button/toright.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/button/torightone.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/dialog/dialogpanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/dialog/dialogpanel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/form/input_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/form/input_bt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/grid/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/grid/resizeCol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/grid/tableth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/header_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/layout/taskbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/layout/taskbar_control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/layout/taskbar_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/layout/toggleSidebar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/listLine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/login_banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/login_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/login_content_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/login_header_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/login_list.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/login_logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/login_sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/login_title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/menu/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/order_down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/order_up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/pageHeader_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/panel/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/panel/panel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/panel/panel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/progressBar/progressBar_l.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/progressBar/progressBar_m.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/progressBar/progressBar_s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/search-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/search-bt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/shadow/shadow_c_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/shadow/shadow_c_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/shadow/shadow_c_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/shadow/shadow_f_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/shadow/shadow_f_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/shadow/shadow_f_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/shadow/shadow_h_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/shadow/shadow_h_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/shadow/shadow_h_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/tabs/tabscontrol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/tabs/tabspage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/tabs/tabspage_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/tabs/tabspanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/themeButton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/tree/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/tree/folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/images/tree/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/default/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/accordion/accordion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/account_info_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/alert/alertpanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/alert/alertpanel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/button/button_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/button/imgX.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/dialog/dialogpanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/dialog/dialogpanel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/form/input_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/form/input_bt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/grid/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/grid/resizeCol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/grid/tableth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/header_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/layout/toggleSidebar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/listLine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/pageHeader_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/panel/panel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/panel/panel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/tabs/tabscontrol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/tabs/tabspage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/tabs/tabspage_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/tabs/tabspanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/images/tree/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/green/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/login/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/login/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/login/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/login/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/login/Validform_v5.3.2_min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/login/captcha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/login/copy_rignt_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/login/jQuery1.7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/login/jquery-1.8.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/login/jquery1.42.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/login/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/accordion/accordion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/account_info_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/alert/alertpanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/alert/alertpanel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/button/button_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/button/imgX.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/dialog/dialogpanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/dialog/dialogpanel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/form/input_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/form/input_bt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/grid/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/grid/resizeCol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/grid/tableth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/header_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/layout/taskbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/layout/taskbar_control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/layout/taskbar_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/layout/toggleSidebar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/login_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/login_content_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/login_header_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/login_list.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/menu/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/pageHeader_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/panel/panel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/panel/panel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/progressBar/progressBar_l.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/progressBar/progressBar_m.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/progressBar/progressBar_s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/shadow/shadow_c_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/shadow/shadow_c_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/shadow/shadow_c_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/shadow/shadow_f_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/shadow/shadow_f_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/shadow/shadow_f_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/shadow/shadow_h_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/shadow/shadow_h_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/shadow/shadow_h_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/tabs/tabscontrol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/tabs/tabspage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/tabs/tabspage_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/tabs/tabspanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/tree/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/tree/folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/images/tree/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/purple/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/accordion/accordion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/account_info_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/alert/alertpanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/alert/alertpanel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/button/button_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/button/imgX.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/dialog/dialogpanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/dialog/dialogpanel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/form/input_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/form/input_bt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/grid/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/grid/resizeCol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/grid/tableth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/header_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/layout/taskbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/layout/taskbar_control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/layout/taskbar_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/layout/toggleSidebar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/listLine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/menu/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/pageHeader_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/panel/panel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/panel/panel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/progressBar/progressBar_l.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/progressBar/progressBar_m.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/progressBar/progressBar_s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/shadow/shadow_c_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/shadow/shadow_c_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/shadow/shadow_c_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/shadow/shadow_f_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/shadow/shadow_f_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/shadow/shadow_f_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/shadow/shadow_h_c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/shadow/shadow_h_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/shadow/shadow_h_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/tabs/tabscontrol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/tabs/tabspage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/tabs/tabspage_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/tabs/tabspanel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/tree/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/tree/folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/images/tree/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/themes/silver/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/uploadify/Change Log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/uploadify/css/uploadify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/uploadify/img/add.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/uploadify/img/cancel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/uploadify/img/delete.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/uploadify/img/upload.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/uploadify/img/uploadify-cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/uploadify/scripts/jquery.uploadify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/uploadify/scripts/jquery.uploadify.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/uploadify/scripts/uploadify.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor-1.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/angry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/awkward.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/bye.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/crazy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/cry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/curse.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/cute.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/despise.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/doubt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/envy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/fastcry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/knock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/laugh.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/mad.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/ohmy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/panic.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/proud.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/quiet.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/sad.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/shutup.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/shy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/sleep.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/struggle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/titter.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/tongue.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/wail.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/default/wronged.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/alien.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/angel.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/angry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/bandit.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/biglaugh.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/blink.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/blush.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/cool.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/cry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/depres.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/devil.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/glare.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/heart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/joyful.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/kiss.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/laugh.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/magician.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/ninja.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/pinch.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/police.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/sad.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/sick.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/sideways.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/sleep.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/surprised.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/tongue.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/unsure.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/w00t.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/whistling.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/wondering.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/ipb/wub.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/msn/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/angry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/bad.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/blush.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/brokenheart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/bye.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/coffee.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/cool.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/cry.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/curse.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/cute.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/devil.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/envy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/gift.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/good.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/kiss.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/laugh.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/love.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/music.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/question.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/rose.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/sad.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/shocked.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/shout.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/sick.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/sleepy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/soccer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/sweat.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/tired.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/tongue.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/victory.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_emot/pidgin/wink.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_lang/zh-tw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/html2markdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/htmldomparser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/img/add.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/img/bg1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/img/bg2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/img/btnbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/img/btnbgr.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/img/clear.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/img/progressbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/img/start.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/multiupload.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/multiupload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/multiupload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/swfupload/swfupload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/multiupload/swfupload/swfupload.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/showdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_plugins/ubb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/flash.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/progress.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/progressbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/tag-address.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/tag-div.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/tag-h1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/tag-h2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/tag-h3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/tag-h4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/tag-h5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/tag-h6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/tag-p.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/tag-pre.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/waiting.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/wmp.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/img/wordimg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/default/ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/flash.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/progress.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/progressbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/tag-address.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/tag-div.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/tag-h1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/tag-h2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/tag-h3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/tag-h4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/tag-h5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/tag-h6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/tag-p.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/tag-pre.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/waiting.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/wmp.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/img/wordimg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/nostyle/ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/buttonbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/flash.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/progress.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/progressbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/tag-address.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/tag-div.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/tag-h1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/tag-h2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/tag-h3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/tag-h4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/tag-h5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/tag-h6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/tag-p.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/tag-pre.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/waiting.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/wmp.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/img/wordimg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007blue/ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/buttonbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/flash.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/progress.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/progressbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/tag-address.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/tag-div.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/tag-h1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/tag-h2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/tag-h3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/tag-h4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/tag-h5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/tag-h6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/tag-p.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/tag-pre.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/waiting.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/wmp.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/img/wordimg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/o2007silver/ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/buttonbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/flash.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/progress.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/progressbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/tag-address.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/tag-div.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/tag-h1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/tag-h2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/tag-h3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/tag-h4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/tag-h5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/tag-h6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/tag-p.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/tag-pre.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/titlebg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/waiting.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/wmp.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/img/wordimg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/server_Web_exploded/xheditor/xheditor_skin/vista/ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/applicationContext.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
@@ -46,11 +871,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/config/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="399">
+              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -69,11 +894,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/biz/web/action/sys/UserOperAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="224" column="45" selection-start-line="224" selection-start-column="45" selection-end-line="224" selection-end-column="45" />
+            <state relative-caret-position="1894">
+              <caret line="241" column="25" selection-start-line="241" selection-start-column="25" selection-end-line="241" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -168,8 +993,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="87" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
@@ -192,18 +1017,13 @@
             <path>
               <item name="server" type="b2602c69:ProjectViewProjectNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="server" type="b2602c69:ProjectViewProjectNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -227,7 +1047,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/WebRoot/WEB-INF/lib" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.46638656" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -279,7 +1099,7 @@
     <configuration name="server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.40" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="server:Web exploded">
+        <artifact name="server:Web">
           <settings>
             <option name="CONTEXT_PATH" value="/server_Web_exploded" />
           </settings>
@@ -344,7 +1164,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="server:Web exploded" />
+          <artifact name="server:Web" />
         </option>
       </method>
     </configuration>
@@ -378,11 +1198,12 @@
       <workItem from="1557220103537" duration="3418000" />
       <workItem from="1557295988506" duration="22000" />
       <workItem from="1557308873687" duration="181000" />
+      <workItem from="1557398445977" duration="616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32719000" />
+    <option name="totallyTimeSpent" value="33335000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,9 +1215,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23687424" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23931624" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -721,23 +1542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/biz/web/action/sys/SysUserAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -781,8 +1585,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/biz/web/action/sys/UserOperAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="224" column="45" selection-start-line="224" selection-start-column="45" selection-end-line="224" selection-end-column="45" />
+        <state relative-caret-position="1894">
+          <caret line="241" column="25" selection-start-line="241" selection-start-column="25" selection-end-line="241" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -794,16 +1615,16 @@
           <artifact-editor>
             <show-content>
               <type id="library" />
+              <type id="jpa-descriptors" />
               <type id="artifact" />
               <type id="javaee-facet-resources" />
-              <type id="jpa-descriptors" />
             </show-content>
           </artifact-editor>
-          <last-edited>server:Web exploded</last-edited>
+          <last-edited>server:Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.46638656" />
+                <option value="0.2592242" />
                 <option value="0.5" />
               </list>
             </option>

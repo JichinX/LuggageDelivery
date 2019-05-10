@@ -15,6 +15,8 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.google.common.base.Strings;
+
 import me.xujichang.luggagedelivery.base.Const;
 import me.xujichang.luggagedelivery.base.ui.BaseFragment;
 import me.xujichang.luggagedelivery.data.Result;
@@ -81,19 +83,17 @@ public class OrderAddFragment extends BaseFragment {
         mViewModel.getResult().observe(getViewLifecycleOwner(), new Observer<Result>() {
             @Override
             public void onChanged(Result pResult) {
-                if (pResult.getFlag() == Const.Flag.ORDER_ADD) {
-                    showTip(pResult, new Result.CallBack() {
-                        @Override
-                        public void onSuccess() {
-                            NavHostFragment.findNavController(getParentFragment()).navigateUp();
-                        }
-                    });
-                    mViewModel.clearResult();
-                }
+                showTip(mViewModel, pResult, Const.Flag.ORDER_ADD, new Result.CallBack() {
+                    @Override
+                    public void onSuccess() {
+                        NavHostFragment.findNavController(getParentFragment()).navigateUp();
+                    }
+                });
             }
         });
         mAddBinding.spinnerOrderDept.setAdapter(mSpinnerAdapter);
     }
+
 
     /**
      * 添加 订单
@@ -101,6 +101,28 @@ public class OrderAddFragment extends BaseFragment {
      * @param pOrder
      */
     public void addOrder(Order pOrder) {
+        //检查参数
+        String weight = mAddBinding.etOrderWeight.getText().toString();
+        if (Strings.isNullOrEmpty(weight)) {
+            showToast("物品重量不能为空");
+            return;
+        }
+        if (Strings.isNullOrEmpty(pOrder.getAddress()) || Strings.isNullOrEmpty(pOrder.getFromuseraddress())) {
+            showToast("地址信息不能为空");
+            return;
+        }
+        if (Strings.isNullOrEmpty(pOrder.getGoodsname())) {
+            showToast("物品名称不能为空");
+            return;
+        }
+        if (Strings.isNullOrEmpty(pOrder.getFromusername()) || Strings.isNullOrEmpty(pOrder.getUsername())) {
+            showToast("用户姓名不能为空");
+            return;
+        }
+        if (Strings.isNullOrEmpty(pOrder.getUserphone()) || Strings.isNullOrEmpty(pOrder.getFromuserphone())) {
+            showToast("收集信息不能为空");
+            return;
+        }
         pOrder.setGoodsweight(Double.parseDouble(mAddBinding.etOrderWeight.getText().toString()));
         mViewModel.addOrder(pOrder, 100);
     }
